@@ -1,0 +1,33 @@
+﻿@model PWEB_AulasP_2223.Models.Curso
+
+@{
+    ViewData["Title"] = "Detalhes de um cuso";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<h2 class="pb-2 border-bottom">@Model.Nome</h2>
+<p>@Html.Raw(Model.Descricao.ToString().Replace(Environment.NewLine, "<br />"))</p>
+<div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
+    
+    <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"></use></svg>
+        </div>
+        <h3 class="fs-2">Requisitos</h3>
+        <p>@Html.Raw(Model.Requisitos.ToString().Replace(Environment.NewLine, "<br />"))</p>
+        
+    </div>
+    <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+        </div>
+        <h3 class="fs-2">Custo</h3>
+        <p>@Model.Preco euros </p>
+        
+    </div></div>
+
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,125 @@
+﻿@model IEnumerable<PWEB_AulasP_2223.Models.Curso>
+@{
+    ViewData["Title"] = "Home Page";
+}
+<div id="carouselDestaques" class="carousel slide m-0" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselDestaques" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+        <button type="button" data-bs-target="#carouselDestaques" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+        <button type="button" data-bs-target="#carouselDestaques" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active banner_01">           
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1 class=" text-warning">Conquista a tua liberdade!</h1>
+                    <p class=" text-white">Carro, Mota, Camião, tu escolhes, nós ensinamos.</p>
+                    <p><a class="btn btn-lg btn-warning " href="#">Junta-te a nós</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item  banner_06">            
+            <div class="container">
+                <div class="carousel-caption text-white">
+                    <h1>Formação Teórica.</h1>
+                    <p>
+                        Acesso exclusivo a conteúdos no nosso portal!<br />
+                        Todas as questões do IMTT, Testes, Estatísticas, Comunicação com o teu instrutor.
+                    </p>
+                    <p><a class="btn btn-lg btn-success" href="#">Regista-te!</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item  banner_02">
+            <div class="container">
+                <div class="carousel-caption text-end">
+                    <h1>Os melhores instrutores.</h1>
+                    <p>Temos os melhores instrutores do país.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Conhecer</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestaques" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselDestaques" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<div class="container bg-white">
+    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+        <h1 class="display-4 fw-normal">Cursos & Preços</h1>
+        <p class="fs-5 text-muted">Na nossa escola podes aprender a conduzir desde uma scooter até um avião, consoante a tua vontade e disponibilidade financeira. Temos planos para todas as bolsas. Podes comprar um curso completo ou podes comprar packs de aulas até estares pronto para o exame.</p>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+
+        @foreach(Curso c in Model){
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">@c.Nome</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">€ @c.Preco<small class="text-muted fw-light"></small></h1>
+                        @c.DescricaoResumida
+                        <a  asp-controller="Cursos"  asp-action="Details" asp-route-id="@c.Id" class="w-100 btn btn-lg btn-outline-primary">Saber mais</a>
+                    </div>
+                </div>
+            </div>
+        }
+
+     @*   <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                    <h4 class="my-0 fw-normal">Condução defensiva</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">€ 2000<small class="text-muted fw-light"></small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>Aulas prioritárias</li>
+                        <li>1 instrutor dedicado</li>
+                        <li>Automóveis e Motas</li>
+                        <li>Instrutor virtual</li>
+                        <li>Centro de apoio online exclusivo</li>
+                    </ul>
+                    <button type="button" class="w-100 btn btn-lg btn-outline-primary">Saber mais</button>
+                </div>
+            </div>
+        </div>*@
+        @*<div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                    <h4 class="my-0 fw-normal">Automóvel + Moto</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">€ 1500<small class="text-muted fw-light"></small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>1 instrutor dedicado</li>
+                        <li>Veículos novos</li>
+                        <li>Centro de apoio online exclusivo</li>
+                    </ul>
+                    <button type="button" class="w-100 btn btn-lg btn-primary">saber mais</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                <div class="card-header py-3 text-white bg-primary border-primary">
+                    <h4 class="my-0 fw-normal">Automóvel</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">€ 1000<small class="text-muted fw-light"></small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>Aulas partilhadas</li>
+                        <li>Veículos partilhados</li>
+                        <li>Testes online</li>
+                    </ul>
+                    <button type="button" class="w-100 btn btn-lg btn-primary">saber mais</button>
+                </div>
+            </div>
+        </div>*@
+    </div>
+</div>

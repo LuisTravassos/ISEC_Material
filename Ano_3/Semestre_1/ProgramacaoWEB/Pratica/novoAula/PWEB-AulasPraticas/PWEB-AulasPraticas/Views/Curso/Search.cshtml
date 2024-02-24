@@ -1,0 +1,61 @@
+﻿@model PWEB_AulasPraticas1.Models.PesquisaCursoViewModel
+@{
+    ViewData["Title"] = "Index";
+
+
+}
+
+<a asp-action="Index" type="button" class="btn btn-secondary">Todos</a>
+<a asp-action="Index" asp-route-disponivel="True" type="button" class="btn btn-success">Ativos</a>
+<a asp-action="Index" asp-route-disponivel="False" type="button" class="btn btn-danger">Inativos</a>
+
+<p>
+    <a asp-action="Create" type="button" class="btn btn-info m-1">Create New</a>
+</p>
+
+@Html.Partial("QuickSearchPartial", "")
+
+@if (!Model.ListaDeCursos.Any())
+{
+    <div class="alert alert-info" role="alert">
+        Não foi possível encontrar cursos com os dados introduzidos. Por favor, reveja a sua
+        pesquisa
+    </div>
+}
+else
+{
+    <div class="container bg-white">
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+            <h1 class="display-4 fw-normal">Os nossos cursos</h1>
+            <p class="fs-5 text-muted">
+                Existe(m) @Model.ListaDeCursos.Count() curso(s) disponível(eis).
+            </p>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            @foreach (var item in Model.ListaDeCursos)
+            {
+                <div class="col">
+                    <div class="card mx-auto text-center rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">@item.Nome</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">
+                                @item.Preco € <small class="text-muted fw-light"></small>
+                            </h1>
+                            <div class="list-unstyled mx-auto">
+                                @item.DescricaoResumida
+                            </div>
+
+                            <a asp-action="Details" asp-controller="Curso" asp-route-id="@item.Id" type="button" class="btn btn-primary btn-sm m-1">
+                                Saber mais
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+}
+

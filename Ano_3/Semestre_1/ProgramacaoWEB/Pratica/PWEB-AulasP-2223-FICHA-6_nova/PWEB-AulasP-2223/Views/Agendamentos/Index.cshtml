@@ -1,0 +1,78 @@
+﻿@model IEnumerable<PWEB_AulasP_2223.Models.Agendamento>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+           <th>Username</th>
+            <th>Primeiro Nome</th>
+            <th>Último Nome</th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataInicio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataFim)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DuracaoHoras)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DuracaoMinutos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Preco)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataHoraDoPedido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.tipoDeAula)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+                <td>@item.ApplicationUser.UserName</td>
+                <td>@item.ApplicationUser.PrimeiroNome</td>
+                <td>@item.ApplicationUser.UltimoNome</td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataInicio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataFim)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DuracaoHoras)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DuracaoMinutos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Preco)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataHoraDoPedido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tipoDeAula.Nome)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

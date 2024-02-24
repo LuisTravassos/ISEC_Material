@@ -1,0 +1,47 @@
+﻿@model PWEB_AulasPraticas1.Models.Curso
+
+@{
+    ViewData["Title"] = "Details";
+
+}
+
+<h1>Details</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <h4>Descrição</h4>
+        <p>@Model.Descricao</p>
+
+        <h4>Requisitos</h4>
+        <p>@Model.Requisitos</p>
+
+        <h4>Idade Mínima</h4>
+        <p>@Model.IdadeMinima</p>
+
+        <h4>Preço</h4>
+        <p>@Model.Preco €</p>
+
+        <h4>Em Destaque</h4>
+        <p>@(Model.EmDestaque ? "Sim" : "Não")</p>
+    </div>
+
+    <div class="col-md-6">
+        <h4>Descrição Resumida</h4>
+        <p>@Model.DescricaoResumida</p>
+
+        <h4>Disponível</h4>
+        <p>@(Model.Disponivel ? "Sim" : "Não")</p>
+
+        <!--<h4>Categoria da Carta</h4>
+        <p>Model.categoriaCarta.Nome</p>-->
+    </div>
+</div>
+
+<div>
+    @if (User.IsInRole("Admin"))
+    {
+        <a type="button" class="btn btn-secondary" asp-action="Edit" asp-route-id="@Model.Id">Editar</a>
+    }
+    
+    <a type="button" class="btn btn-info m-1" asp-action="Index">Voltar à Lista</a>
+</div>

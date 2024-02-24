@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\PWEB-AulasPraticas1.props" />
+</Project>

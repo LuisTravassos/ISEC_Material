@@ -1,0 +1,27 @@
+﻿@model UserRolesViewModel
+
+@{
+    ViewData["Title"] = "User Roles Details";
+}
+
+<h1>User Roles Details</h1>
+
+<form asp-action="Details" method="post">
+    <input type="hidden" asp-for="UserId" />
+    <div class="form-group">
+        <label for="UserName">User Name</label>
+        <input id="UserName" type="text" asp-for="UserName" class="form-control" readonly />
+    </div>
+    <div class="form-group">
+        <label for="Roles">Roles</label>
+        @foreach (var role in Model.Roles)
+        {
+            <div class="form-check">
+                <input type="checkbox" id="@role" name="SelectedRoles" value="@role"
+                @(Model.Roles.Contains(role) ? "checked" : "") />
+                <label for="@role">@role</label>
+            </div>
+        }
+    </div>
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+</form>

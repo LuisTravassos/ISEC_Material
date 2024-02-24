@@ -1,0 +1,89 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = PWEB_AulasPraticas1
+build_property.RootNamespace = PWEB_AulasPraticas1
+build_property.ProjectDir = C:\Users\luist\OneDrive\Ambiente de Trabalho\ISEC\ano3_EngInformatica\PWEB\Pratica\aula1\PWEB-AulasPraticas1\PWEB-AulasPraticas1\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\luist\OneDrive\Ambiente de Trabalho\ISEC\ano3_EngInformatica\PWEB\Pratica\aula1\PWEB-AulasPraticas1\PWEB-AulasPraticas1
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/luist/OneDrive/Ambiente de Trabalho/ISEC/ano3_EngInformatica/PWEB/Pratica/aula1/PWEB-AulasPraticas1/PWEB-AulasPraticas1/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luist/OneDrive/Ambiente de Trabalho/ISEC/ano3_EngInformatica/PWEB/Pratica/aula1/PWEB-AulasPraticas1/PWEB-AulasPraticas1/Views/Curso/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3Vyc29cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luist/OneDrive/Ambiente de Trabalho/ISEC/ano3_EngInformatica/PWEB/Pratica/aula1/PWEB-AulasPraticas1/PWEB-AulasPraticas1/Views/Curso/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3Vyc29cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luist/OneDrive/Ambiente de Trabalho/ISEC/ano3_EngInformatica/PWEB/Pratica/aula1/PWEB-AulasPraticas1/PWEB-AulasPraticas1/Views/Curso/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3Vyc29cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luist/OneDrive/Ambiente de Trabalho/ISEC/ano3_EngInformatica/PWEB/Pratica/aula1/PWEB-AulasPraticas1/PWEB-AulasPraticas1/Views/Curso/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3Vyc29cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luist/OneDrive/Ambiente de Trabalho/ISEC/ano3_EngInformatica/PWEB/Pratica/aula1/PWEB-AulasPraticas1/PWEB-AulasPraticas1/Views/Curso/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3Vyc29cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luist/OneDrive/Ambiente de Trabalho/ISEC/ano3_EngInformatica/PWEB/Pratica/aula1/PWEB-AulasPraticas1/PWEB-AulasPraticas1/Views/Curso/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3Vyc29cU2VhcmNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luist/OneDrive/Ambiente de Trabalho/ISEC/ano3_EngInformatica/PWEB/Pratica/aula1/PWEB-AulasPraticas1/PWEB-AulasPraticas1/Views/Home/Contacts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luist/OneDrive/Ambiente de Trabalho/ISEC/ano3_EngInformatica/PWEB/Pratica/aula1/PWEB-AulasPraticas1/PWEB-AulasPraticas1/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luist/OneDrive/Ambiente de Trabalho/ISEC/ano3_EngInformatica/PWEB/Pratica/aula1/PWEB-AulasPraticas1/PWEB-AulasPraticas1/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luist/OneDrive/Ambiente de Trabalho/ISEC/ano3_EngInformatica/PWEB/Pratica/aula1/PWEB-AulasPraticas1/PWEB-AulasPraticas1/Views/Home/Quem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxRdWVtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luist/OneDrive/Ambiente de Trabalho/ISEC/ano3_EngInformatica/PWEB/Pratica/aula1/PWEB-AulasPraticas1/PWEB-AulasPraticas1/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luist/OneDrive/Ambiente de Trabalho/ISEC/ano3_EngInformatica/PWEB/Pratica/aula1/PWEB-AulasPraticas1/PWEB-AulasPraticas1/Views/Shared/_Layout2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luist/OneDrive/Ambiente de Trabalho/ISEC/ano3_EngInformatica/PWEB/Pratica/aula1/PWEB-AulasPraticas1/PWEB-AulasPraticas1/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luist/OneDrive/Ambiente de Trabalho/ISEC/ano3_EngInformatica/PWEB/Pratica/aula1/PWEB-AulasPraticas1/PWEB-AulasPraticas1/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luist/OneDrive/Ambiente de Trabalho/ISEC/ano3_EngInformatica/PWEB/Pratica/aula1/PWEB-AulasPraticas1/PWEB-AulasPraticas1/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luist/OneDrive/Ambiente de Trabalho/ISEC/ano3_EngInformatica/PWEB/Pratica/aula1/PWEB-AulasPraticas1/PWEB-AulasPraticas1/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luist/OneDrive/Ambiente de Trabalho/ISEC/ano3_EngInformatica/PWEB/Pratica/aula1/PWEB-AulasPraticas1/PWEB-AulasPraticas1/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-gtobrvzk1a

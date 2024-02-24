@@ -1,0 +1,64 @@
+﻿@model PWEB_AulasPraticas1.Models.Agendamento
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Agendamento</h4>
+<hr />
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <form asp-action="Edit">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="Id" />
+                <div class="form-group">
+                    <label asp-for="DataInicio" class="control-label"></label>
+                    <input asp-for="DataInicio" class="form-control" />
+                    <span asp-validation-for="DataInicio" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="DataFim" class="control-label"></label>
+                    <input asp-for="DataFim" class="form-control" />
+                    <span asp-validation-for="DataFim" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="DuracaoEmHoras" class="control-label"></label>
+                    <input asp-for="DuracaoEmHoras" class="form-control" />
+                    <span asp-validation-for="DuracaoEmHoras" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="DuracaoEmMinutos" class="control-label"></label>
+                    <input asp-for="DuracaoEmMinutos" class="form-control" />
+                    <span asp-validation-for="DuracaoEmMinutos" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Preco" class="control-label"></label>
+                    <input asp-for="Preco" class="form-control" />
+                    <span asp-validation-for="Preco" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="DataHoraDoPedido" class="control-label"></label>
+                    <input asp-for="DataHoraDoPedido" class="form-control" />
+                    <span asp-validation-for="DataHoraDoPedido" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Save" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

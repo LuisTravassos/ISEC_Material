@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "SI2_TP_Parte2", "SI2_TP_Parte2\SI2_TP_Parte2.dwproj", "{F5B56690-66F4-4680-B89B-323F70F0BB82}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5B56690-66F4-4680-B89B-323F70F0BB82}.Development|Default.ActiveCfg = Development
+		{F5B56690-66F4-4680-B89B-323F70F0BB82}.Development|Default.Build.0 = Development
+		{F5B56690-66F4-4680-B89B-323F70F0BB82}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B2667F63-7ACF-4A0C-B408-BA61343B0B60}
+	EndGlobalSection
+EndGlobal

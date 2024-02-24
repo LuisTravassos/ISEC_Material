@@ -1,0 +1,57 @@
+﻿@model IEnumerable<PWEB_AulasPraticas1.Models.CategoriaCarta>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    @if (User.IsInRole("Admin"))
+    {
+        <a type="button" class="btn btn-warning" asp-action="Create">Create New</a>
+    }
+    s
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descricao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Disponivel)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descricao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Disponivel)
+            </td>
+            <td>
+                @if (User.IsInRole("Admin"))
+                {
+                    <a type="button" class="btn btn-secondary"  asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                }
+                    <a type="button" class="btn btn-info" asp-action="Details" asp-route-id="@item.Id">Details</a>
+                @if (User.IsInRole("Admin"))
+                {
+                    <a type="button" class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                }
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

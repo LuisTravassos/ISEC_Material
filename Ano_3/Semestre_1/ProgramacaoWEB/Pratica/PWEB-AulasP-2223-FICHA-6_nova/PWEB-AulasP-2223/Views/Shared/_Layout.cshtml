@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - PWEB Aulas 2022/23</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/carousel.css" asp-append-version="true" />
+</head>
+<body class="d-flex h-100 text-center  bg-white p-0 m-0">
+    <div class="cover-container d-flex w-100 h-100 p-0 mx-auto flex-column">
+        <header class="p-7 text-white">
+            <div class="container">
+                <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark mb-3 fixed-top" style="background: rgba(0, 0, 0, .5);">
+                    <div class="container" >
+                        <a class="navbar-brand text-warning" href="#"><svg bootstrap-icon="SignTurnRightFill" class="text-warning" width="48" height="48" aria-label="SignTurnRightFill"></svg> <strong>PWEB</strong></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">INÍCIO</a>
+                                </li>                                
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Contactos">CONTACTOS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" asp-area="" asp-controller="Cursos" asp-action="Search">CURSOS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" asp-area="" asp-controller="Categorias" asp-action="Index">CATEGORIAS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" asp-area="" asp-controller="Agendamentos" asp-action="Pedido">AGENDAMENTO</a>
+                                </li>
+                                
+
+
+
+                            </ul>
+                            <partial name="~/Views/Cursos/QuickSearchPartial.cshtml" />
+
+                            <partial name="_LoginPartial" />
+                        </div>
+                    </div>
+                </nav>                
+            </div>
+        </header>
+
+        <main class="px-0 mx-0">
+            @RenderBody()
+        </main>
+
+        <footer class="border-top footer text-muted">
+            <div class="container">
+                &copy; 2023 - PWEB Aulas - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            </div>
+        </footer>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,45 @@
+1
+ab.
+    -verdade - os delegates são ponteiros seguros para referenciar métodos. Como tal devem ser declarados como um tipo delegate. Os delegates permitem altarar o comportamento dos metodos ao passar-lhes referencias para outros métodos.
+
+    -falso - o uso de delegates não substitui o uso de funções ou métodos. Os delegates são simplesmente outra ferramenta para tornar o código mais legível e fácil de manter.
+
+    -verdade - a passagem de referencia de metodos(delegates) a outros metodos permite alterar comportamento de forma limpa, sem duplicação de código.
+
+    -falso - os delegates apenas são do tipo referência. Conceptualmente, não faz sentido considerar que um deelgate guarda qualquer tipo de dados primitivo.
+
+    -verdadeiro - os delegates podem ser usados para guardar métodos anónimos, usando por exemplo, expressões lambda. Entre outras vantagens, uma das mais significativas é de permitir ao programador alterar o comportamento dos métodos durante o runtime; algo que não é possível fazer com métodos estáticos.
+
+    -verdadeiro - a utilização de delegates pode ser limitada dependendo do projeto. É possível que seja necessário limitar o uso de delegates para melhorar a performance de uma aplicação. Os delegates também não são orientados para cenários onde a concorrencia é importante, e pode ser desafiante implementa-los nesses circunstancias. Outra limitação é a impossibilidade de usar delegates com structs em vez de classes, já que o delegate é do tipo referencia.
+
+2.
+    Esta afirmação é falsa. O computador cliente apenas tem de ter instalado um browser. Não é, em qualquer circunstancia, necessário ou útil instalar um sistema de gestao de base de dados no computador cliente. Qualquer browser comercial deve estar preparado para renderizar os ficheiros de html e javascript (ou webassembly) que sejam enviados pelo servidor na sequencia de um pedido. Para além do mais, o sistema de gestão de base de dados nem tem de ser exatamente o mesmo entre as mesmas instancias do servidor, assumindo que o mesmo website é servido em vários pontos. O LINQ e o entity framework do ASP .Net MVC permite, após uma conecção com a base de dados, que seja possivel aceder a qualquer tecnologia de bases de dados com o mesmo código.
+
+3.
+a. a utilizacao do "for" na designacao dos HTML helpers indica se os metodos helper sao fortemente tipados. posto de outra forma, serve para associar, sem ambiguidade, os helper methods aos atributos estipulados nas classes dos modelos utilziados. Os helper methods não fortemente tipados (sem "for") são normalmente utilizados para abreviar o html de conteúdo estático ou quando o conteúdo não depende das propriedades do modelo.
+
+Tag Helpers - código semelhante aos html helpers no sentido em que abreviam código de ao gerar html em runtime. Os tag helpers têm uma sintaxe semelhante ao html mas têm funcionalidades especiais. Para alem dos tag helpers serem mais legiveis que os html helpers, estes também oferecem mais algumas funcionalidades como renderização condicional (asp-if).
+
+b.
+O modelo MVC - model-view-controler é um desgin pattern frequentemente utilizado para organisar a estrutura de projetos de desenvolvimento web. O controlador é responsável por receber e enviar dados para as views, sobre forma de viewmodels, classes de modelos ou outro tipo de dados (viewdata, viewbag, tempdata). As views contem cshtml -- uma mistura de csharp (razor) e html que permite apresentar e receber dados dos utilizadores e ou dos controladores. As views também interagem com os modelos para obterem informação sobre as validações, métodos e tipos definidos nas propriedades.
+
+
+c
+Continuaria a ser possivel desenvolver sites sem HTML helpers, apesar da dificuldade acrescida. O mesmo se pode dizer do Razor. Há que notar que a dificuldade acrescida de não usar Razor é considerável. Sem Razor teria de ser implementada uma forma alternativa de gerar páginas html com conteúdo dinâmico. Poder-se ia utilizar HTML simples ou então um motor de views alternativo como o web forms. A solução mais eficiente é, claramente, a utilização de razor e tag helpers.
+
+4
+a.
+A aqruitetura LINQ to entities descreve a interação entre a aplicação e a base de dados com o LINQ a servir de intermediário. O código na aplicação usa a sintaxe LINQ para definir as pesquisas a fazer na base de dados e o motor do LINQ faz a conversão para o sistema de gestão de base de dados usado pelo servidor, neste caso SQL server. O sql server devolve uma lista de tupulos que o LINQ depois converte num objeto a ser utilizado num controlador da aplicação. A grande vatnagem de usar LINQ é a flexibilidade. Ao usar LINQ, a aplicação torna-se idepente de uma técnologia de base de dados em especifico. Desde que seja feita a conecção com a base de dados, as pesquisas feitas na sintaxe LINQ são convertidas para queries na sintaxe da tecnologia utilizada. Com LINQ a mesma aplicação pode exercutar pesquisas e operações de I/O em diferentes tecnologias de SGBD sem implicar quaisquer alterações á sintaxe da pesquisa.
+
+b. Os extensions methods são a forma mais moderna e prática de fazer pesquisas em LINQ. Enquanto que a query syntax oferece regras muito semelhantes às queries tradicinais de SQL, os extensions methods são mais versáteis e legíveis. Os extension methods permitem acrescentar operações a queries feitas a listas de objetos para fazer queries complexas. Os extension methods permitem ainda a utilização de expressões lambda ou predicates na instrução "where" para definir condições nas pesquisas.
+
+
+5.
+a.
+A instrução seleciona os alunos cujo ultimo nome começa com T. Mais detalhadamente, a expressão lambda na clausa where, seleciona o Nome do objeto aluno, separa-o pelo delimitador ' '(espaço), obtem a ultima palavra com Last() e finalmente aplica um extension method que verifica se essa palavra começa com a letra T.
+
+b.
+O tipo usado é IEnumerable<Aluno>. Trata-se de uma lista iterável de objetos aluno. As listas iteráveis, neste caso IEnumerable<T> são uma interface que represetna uma coleção genérica do csharp. Esta interface pode ser implementada para criar objetos iteráveis pelo for each, mas a vantagem principal é que é uma forma genérica e compativel com o LINQ de representar conjuntos de valores ou objetos.
+
+c.
+O operador => é fundamental na utilização de expressões lambda (métodos anónimos). Á sua esquerda têm se os parametros de entrada; à direita têm-se o código que que define o comportamento da expressão. As expressões lambda são ferramentas úteis para definir condições de seleção em queries LINQ que usem extension methods. Na instrução dada, é usada uma expressão lambda para selecionar os alunos 'a' na lista alunosF.

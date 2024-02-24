@@ -1,0 +1,29 @@
+Key Partners:
+Universidades e faculdades: Estabelecer parcerias com instituições de ensino para identificar e recrutar explicadores qualificados, bem como encontrar alunos interessados em utilizar o sistema.			
+Organizações de estudantes: Parceria com organizações de estudantes para promover a plataforma entre estudantes e originar assim possiveis clientes.	Marketing: Parcerias com empresas de marketing para ajudar a promover a plataforma e atrair novos clientes.			
+
+Key Activities:
+Desenvolvimento de software: Desenvolver e manter a plataforma online.		Atendimento ao cliente: Gerir os problemas e duvidas questionadas pelos clientes.			
+
+Value Propositions:
+Plataforma online, que permita alunos de diferentes graus academicos encontrarem explicadores ideais para uma determinada àrea, podendo assim ser disponibilizado uma maior gama de explicadores sendo mais facil para os alunos encontrarem assim alguem que os consiga ajudar em regime académico.
+
+Channels:
+Website: O software de explicações pode ser acedido um website.			
+Aplicação móvel: Um aplicação para dispositivos moveis com funcionalidades semelhantes às do website.			
+			
+Customer Relationship:
+Atendimento ao cliente: O software irá ser composto por um chat com recurso a uma Inteligência Artificial que permita dar suporte aos utilizadores da plataforma.			
+Comunidade de utilizadores: Permitir que os explicandos e explicadores se conectem e compartilhem suas experiências por meio de um fórum online.		
+Customer Segments:
+Explicandos: Estudantes de todas as idades e níveis educacionais que precisam de ajuda com suas tarefas escolares, testes ou exames.			
+Explicadores: Professores, tutores ou estudantes universitários com habilidades de ensino e qualificações acadêmicas relevantes.			
+			
+Cost Structure:
+Desenvolvimento de software: Os custos envolvidos na criação e manutenção da plataforma online.
+Marketing: Os custos envolvidos na promoção da plataforma através de publicidade, marketing digital e marketing de conteúdo.
+Salários: Os salários dos funcionários em tempo integral, como desenvolvedores de software, gerentes de atendimento ao cliente e pessoal de marketing.								
+
+Revenue Streams:
+Comissão sobre as transações: O software de explicações pode cobrar uma taxa de comissão sobre cada transação feita entre os explicandos e os explicadores, esta taxa pode variar consoante as condições presentes do mercado.									
+Taxa de assinatura para explicadores: Pode haver a opção de cobrar uma taxa de assinatura mensal para os explicadores que desejam ter sua lista de serviços em destaque na plataforma.						Taxa de assinatura para consumidores: Pode haver a opção de cobrar uma taxa de assinatura mensal para os consumidores em troca de determinadas regalias.	

@@ -1,0 +1,143 @@
+﻿@model PWEB_AulasP_2223.ViewModels.PesquisaCursoViewModel
+
+@{
+
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+<h1>Os nossos cursos</h1>
+@*<form method="post">
+    <label asp-for="TextoAPesquisar"></label>
+    <input asp-for="TextoAPesquisar" />
+
+    <input type="submit" value="Pesquisar" />
+</form>*@
+
+@if (!string.IsNullOrEmpty(Model.TextoAPesquisar))
+{
+    <p>Resultado da pesquisa por "@Model.TextoAPesquisar":</p>
+
+    @if (Model.NumResultados == 0)
+    {
+        <p class="alert alert-warning">
+            Não foi possível
+            encontrar cursos com os dados introduzidos.
+            Por favor, reveja a sua pesquisa
+        </p>
+    }
+}
+else
+{
+    <p>Existe(m) @Model.NumResultados curso(s) disponíveis</p>
+}
+
+
+
+
+
+
+
+
+<div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+
+    @foreach (Curso c in Model.ListaDeCursos)
+    {
+        <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                    @if (string.IsNullOrEmpty(Model.TextoAPesquisar))
+                    {
+                        <h4 class="my-0 fw-normal">
+                            @Html.DisplayFor(model=>c.Nome)
+                            (
+                            @Html.DisplayFor(model=>c.categoria.Nome)
+                            )
+                        </h4>
+                    }
+                    else
+                    {
+                        <h4 class="my-0 fw-normal">
+                            @Html.Raw(
+                    c.Nome.ToString().ToLower().Replace(
+                    Model.TextoAPesquisar.ToLower(),
+                    "<span class=\"bg-warning\">"+Model.TextoAPesquisar+"</span>"))
+
+                            (@Html.DisplayFor(model=>c.categoria.Nome))
+                        </h4>
+                    }
+
+
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">€ @c.Preco<small class="text-muted fw-light"></small></h1>
+                    @if (string.IsNullOrEmpty(Model.TextoAPesquisar))
+                    {
+                        <p>@Html.DisplayFor(model=>c.DescricaoResumida)</p>
+                    }
+                    else
+                    {
+                        <p>
+                            @Html.Raw(c.DescricaoResumida.ToString().ToLower().Replace(Model.TextoAPesquisar.ToLower(), "<span class=\"bg-warning\">"+Model.TextoAPesquisar+"</span>"))
+                        </p>
+                    }
+
+
+                    <a asp-controller="Cursos" asp-action="Details" asp-route-id="@c.Id" 
+                    class="w-100 btn btn-lg btn-outline-primary">Saber mais</a>
+                </div>
+            </div>
+        </div>
+    }
+
+    @*   <div class="col">
+    <div class="card mb-4 rounded-3 shadow-sm">
+    <div class="card-header py-3">
+    <h4 class="my-0 fw-normal">Condução defensiva</h4>
+    </div>
+    <div class="card-body">
+    <h1 class="card-title pricing-card-title">€ 2000<small class="text-muted fw-light"></small></h1>
+    <ul class="list-unstyled mt-3 mb-4">
+    <li>Aulas prioritárias</li>
+    <li>1 instrutor dedicado</li>
+    <li>Automóveis e Motas</li>
+    <li>Instrutor virtual</li>
+    <li>Centro de apoio online exclusivo</li>
+    </ul>
+    <button type="button" class="w-100 btn btn-lg btn-outline-primary">Saber mais</button>
+    </div>
+    </div>
+    </div>*@
+    @*<div class="col">
+    <div class="card mb-4 rounded-3 shadow-sm">
+    <div class="card-header py-3">
+    <h4 class="my-0 fw-normal">Automóvel + Moto</h4>
+    </div>
+    <div class="card-body">
+    <h1 class="card-title pricing-card-title">€ 1500<small class="text-muted fw-light"></small></h1>
+    <ul class="list-unstyled mt-3 mb-4">
+    <li>1 instrutor dedicado</li>
+    <li>Veículos novos</li>
+    <li>Centro de apoio online exclusivo</li>
+    </ul>
+    <button type="button" class="w-100 btn btn-lg btn-primary">saber mais</button>
+    </div>
+    </div>
+    </div>
+    <div class="col">
+    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+    <div class="card-header py-3 text-white bg-primary border-primary">
+    <h4 class="my-0 fw-normal">Automóvel</h4>
+    </div>
+    <div class="card-body">
+    <h1 class="card-title pricing-card-title">€ 1000<small class="text-muted fw-light"></small></h1>
+    <ul class="list-unstyled mt-3 mb-4">
+    <li>Aulas partilhadas</li>
+    <li>Veículos partilhados</li>
+    <li>Testes online</li>
+    </ul>
+    <button type="button" class="w-100 btn btn-lg btn-primary">saber mais</button>
+    </div>
+    </div>
+    </div>*@
+</div>
+
+

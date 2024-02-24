@@ -1,0 +1,73 @@
+﻿@model IEnumerable<PWEB_AulasPraticas1.Models.Agendamento>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Lista de Agendamentos</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Data de Início
+            </th>
+            <th>
+                Data de Fim
+            </th>
+            <th>
+                Duração (Horas)
+            </th>
+            <th>
+                Preço
+            </th>
+            <th>
+                Data e Hora do Pedido
+            </th>
+            <th>
+                Nome do Usuário
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.DataInicio.ToString("dd/MM/yyyy HH:mm")
+                </td>
+                <td>
+                    @item.DataFim.ToString("dd/MM/yyyy HH:mm")
+                </td>
+                <td>
+                    @item.DuracaoEmHoras
+                </td>
+                <td>
+                    @item.Preco
+                </td>
+                <td>
+                    @item.DataHoraDoPedido.ToString("dd/MM/yyyy HH:mm")
+                </td>
+                <td>
+                    @item.ApplicationUser?.PrimeiroNome @item.ApplicationUser?.UltimoNome
+                </td>
+                <td>
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <a type="button" class="btn btn-secondary" asp-action="Edit" asp-route-id="@item.Id">Editar</a> 
+                        <a type="button" class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Excluir</a>
+                    }
+                    
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+    @if (User.IsInRole("Cliente"))
+    {
+        <a asp-action="Create" class="btn btn-primary">Criar um Agendamento</a>
+    }
+</div>

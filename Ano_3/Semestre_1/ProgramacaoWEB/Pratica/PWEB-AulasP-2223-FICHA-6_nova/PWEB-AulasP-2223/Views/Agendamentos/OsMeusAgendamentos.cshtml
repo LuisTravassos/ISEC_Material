@@ -1,0 +1,51 @@
+﻿@model IEnumerable<PWEB_AulasP_2223.Models.Agendamento>
+
+@{
+    ViewData["Title"] = "Os meus agendamentos";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+<h1>Os meus agendamentos</h1>
+<p>
+    <a asp-action="Pedido">Novo Agendamento</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>UserName</th>
+            <th>Primeiro Nome</th>
+            <th>Último Nome</th>
+            <th>Tipo de Aula</th>                        
+            <th>Início</th>
+            <th>Fim</th>
+            <th>Preço</th>         
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ApplicationUser.UserName</td>
+                <td>@item.ApplicationUser.PrimeiroNome</td>
+                <td>@item.ApplicationUser.UltimoNome</td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.tipoDeAula.Nome)
+                </td>                                
+                <td>
+                    @Html.DisplayFor(modelItem => item.DataInicio)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DataFim)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Preco)
+                </td>               
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

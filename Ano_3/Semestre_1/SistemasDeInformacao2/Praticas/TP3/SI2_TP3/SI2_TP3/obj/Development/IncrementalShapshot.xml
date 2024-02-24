@@ -1,0 +1,89 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>SI2_TP3</Database>
+    <Server>DESKTOP-85FC7CA</Server>
+    <ConnectionString>Data Source=DESKTOP-85FC7CA;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>vfjxGQJT5tvY+eTbbv4OwztVs7I=24/11/2023 16:42:0324/11/2023 16:42:03</TimeStamp>
+        <ID>
+          <String>SI2 TP3</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>YeHivWgcHD28D88zn80igPHMlL4=24/11/2023 16:42:2424/11/2023 16:42:24</TimeStamp>
+        <ID>
+          <String>SI2 TP3</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>4GWvdYJX0OFY/AoP0HjMNoO6Egs=24/11/2023 16:42:4624/11/2023 16:42:46</TimeStamp>
+        <ID>
+          <String>LOJA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>4izG6dEln29qiTK3SEbvQafxC/o=24/11/2023 16:42:4624/11/2023 16:42:46</TimeStamp>
+        <ID>
+          <String>METODO PAGAMENTO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>iFUN4Uc6kS0cjgGJeqovlL8tHhk=24/11/2023 16:42:4624/11/2023 16:42:46</TimeStamp>
+        <ID>
+          <String>TEMPO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>DaDl6rcRXKBEMfuDkEcLBsNteQ4=24/11/2023 16:42:4624/11/2023 16:42:46</TimeStamp>
+        <ID>
+          <String>PRODUTO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>QT5PJmxh47T/myIDGRaGuwLLIMU=24/11/2023 16:42:4624/11/2023 16:42:46</TimeStamp>
+        <ID>
+          <String>FUNCIONARIO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>dYOJaURA+BZMgcvQN02VlN6j/R0=24/11/2023 16:42:4624/11/2023 16:42:46EZgpHJ0mz+SAeO6q77bocZP4MWw=24/11/2023 16:42:4624/11/2023 16:42:46</TimeStamp>
+        <ID>
+          <String>SI2 TP3</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>NJJWl9DJrNCVfG+Cs6ik0wXBnIQ=10/11/2023 19:51:1710/11/2023 19:51:17</TimeStamp>
+      <ID>
+        <String>SI2_TP3</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2023-11-24T16:43:01.513333Z</LastDeployed>
+</DeploymentSnapshot>

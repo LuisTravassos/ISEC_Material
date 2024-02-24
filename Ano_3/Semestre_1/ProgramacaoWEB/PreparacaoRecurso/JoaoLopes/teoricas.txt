@@ -1,0 +1,279 @@
+PWEB
+
+1 > introducao > 13-09-2023
+    prof: jorge barbosa
+
+    perguntas:
+        - o desenvolvimento nas tecnologias de PWEB e semelhante ao desenvolvimento em FLASK? E semelhante a REACT?
+            a corrida esta ativa, mas ainda nao existe um vencedor claro para os frameworks principais para PWEB.
+        - visual studio community ou VSCode?
+            usa-se o community normalmente, mas e indiferente
+        - o language integrated query substitui procedimentos e triggers?
+            nada impede o desenvolvedor de mexer diretamente na BD.
+            Duas abordagems:
+                database first
+                code first
+
+    avaliacao
+        compenente escrita, 60%
+            exame
+            minimos 35%
+        trabalho pratico, 40%
+            so ha um unico TP
+            grupos de 3 alunos
+            defesas a partir de 18 de dezembro
+            entregue a 17 de dezembro
+            minimos 35%
+
+    o tema e o desenvolvimento de aplicacoces web -- aplicacoes acessiveis por browsers
+        de um modo geral existe uma base de dados por tras. Vamos usar ASP, MS .NET CORE, e BLAZOR
+            as versoes pares da microsoft sao tradicionalmente defenitivas
+            
+            estamos na versao 6. Nao vamos dar a versao 7. As versoes nao sao meras correcoes. Ha alteracoes substanciais
+
+            o BLAZOR transfere a aplicacao do servidor para o browser. O processamento de dados e local. E um servidor executavel. E dai
+            que vem o temo de web assembler, que compila o servidor assim que ele e recebido na maquina local.
+
+            esta abordagem deiminui a carga nos servidores, porque nao os encarrega de processar tantos dados.
+
+            a base de dados que vamos usar e o MS SQL server. Nao tem de ser.
+
+            Vamos usar o Visual Studio
+
+            vamos fazer um site generico de comercio eletronico. E um tema que mexe em mais campos.
+
+            framework
+                entity framework
+                    ferramentas de utilizacao de BD, facilita muito a nossa vida
+                    migrations
+                        sao instrucoes que criam, automaticamente, bases de dados
+                identity framework
+                    logins e passwords, gestao de contas
+
+            Vamos usar C# (Versao 11) e .NET (outro tipo de codigo)
+
+            3 partes no desenvolvimento de sites
+                modelo
+                vista
+                    codigo que produz, com base no modelo, o html que vai ser enviado para o broser. NAO E HTML.
+                controler
+
+            o codigo base e feito automaticamente pelo VSC.
+
+            as regras de negocio sao muito importantes no desenvolvimento. Os controladores tem de as ter em consideracao.
+
+            RAZOR -- para criar o html de cada aluno numa pauta, existe um for loop - um conjunto de instrucoes. RAZOR e C# misturado
+            com HTML.
+                porque misturar C# com html? O C# nao imprime rapidamente os tags de html, e o HTML e meramente uma linguagem de
+                marcacao. A mistura e mais um casamento. Na
+
+                na realidade nao e bem HTML mas sim 'tag helpers'.
+
+            language integrated query - LIQ - associar um query a uma variavel. Deve ser tipo SQLalchemy.
+
+
+
+2 > 20-09-2023 > Capitulo 0 - introducao / Capitulo 1 - linguagem C#
+    Ao contrario de a uns anos atras, os sites sao mais aplicacoes do que paginas estaticas.
+
+    Num cenario real nao temos necessariamente de usar o SQL server.
+
+    programa:
+        conceitos gerais sobre websites dinamicos/ativos
+        conceitos de programacao em C#
+        construcao de websites com asp.net CORE
+        manipulacao de dados - entity framework core e LINQ
+        topicos de seguranca em aplicacoes web - identity framework core
+
+    o framework .net e usado em todos os produtos modernos da microsoft
+        o ASP.NET e feito em cima do frameowrk .NET
+        a evolucao comecou com o ASP e depois houve a integracao com o .NET
+
+    TP
+        implementar em ASP.NET Core, em C#, usando o entity frameowrk core, LINQ e ASP.NET identity
+        Enunciado no moodle
+        3 alunos
+
+    Capitulo 1 - linguagem C#, conceitos basicos
+        versao atual de c# -> v11
+        
+        as diferencas entre c# 11 e o original sao muito substanciais. Quase linguagens diferentes.
+            C# foi 'beber' de varias outras linguagens, inclusive c++
+            e a linguagem que se usa principalmente em .NET 
+
+        CTS - common type system
+        CLS - common language runtime
+        IL - intermediate language - resultado de uma compilacao generica
+            um segundo compilador, mais especifico ao ambiente/maquina, faz a conversao de IL para codigo maquina mais especifico
+        JIT - hust-in-time
+
+        namespaces - conjuntos logicos que agrupam classes.
+            Sao usados diferentes namespaces para facilitar a atribuicao de nomes a classes
+            permitem classes com o mesmo nome, desde que sejam postas em namespaces diferentes
+
+        MVC - Modelo View controler
+            Model - base de dados
+            Controler - codigo que controla compoeratmentos
+            View - HTML, CSS e JS
+
+            Vamos ter mais que um model, controler e varias views
+
+            Onde comecar? 
+                Base de dados - Temos de pensar nas entidades necessarias no nosso processo de negocio
+                    a partir de cada entidade temos de pensar numa classe de C#
+                    In object-oriented programming (OOP), CRUD stands for Create, Read, Update, and Delete
+                    todas as classes C# tem um id
+                    nas classes de dominio, chamamos 'propriedades' neste contexto (mesmo que atributos)
+                    para cada classe existe um controlador
+
+            o program.cs e o ponto de partida no mesmo sentido que o 'main' em c++, mas nao e bem a mesma coisa. Funciona mais como um
+            um ficheiro de configuracao
+
+3 > 27-09-2023 > continuacao de C#
+    a microsoft teve influencia no desenolvimento dos primeiros compiladores
+    
+    C#
+        -case sensitive
+        -ignora espacos adicionais
+        -todos os ficheiros tem a extensao .cs
+        -lancado em 2001/2002 com a ideia de ir buscar o melhor das linguagens mais populares da altura
+        -C nao evoluiu muito, mas C# tem evoluido bastante
+        -usa PascalCase
+        -cada statement termina com ';'
+        -um bloco de codigo esta delimitidao por chavetas
+        -clases organizadas em namespaces
+        -permite regioes para nevegar mais facilmente os ficheiros de codigo
+        -os tipos tem tamanhos diferentes do que em c++. Os tipos sao muito maiores.
+        -strings literais - forma alternativa de escrever strings que evita o uso de escape characters
+        -interpolacao de strings - uso do cifrao como forma alternativa de criar strings
+        -tem o tipo de dados 'dynamic', onde o compilador assume qual e o tipo da variavel
+            'var' nao e um tipo de dados dinamico. Nas aulas o prof usou este tipo para declarar uma variavel que recebe o resultado
+            de uma query de LINQ
+        -delegates - sao tipos de dados. Existem delegates de metodos.
+
+        a partir da versao 9 foram introduzidas 'instrucoes de nivel superior' / 'top level statements'
+
+        'using system;' - e uma library. Tambem podia usar 'System.WriteLine(...)'
+
+        Enumeracoes, Estruturas e classes em C#
+            Enumeracores
+                tipo de variavel que permite declarar uma lsita de constantes, podendo assim ser utilizado de uma forma 'human-readable'
+
+            Strunct
+                -classe e tipo referencia; struct e tipo valor
+                -as estruturas podem conter construtores, constantes, metodos, propriedades, eventos,....
+                -as estruturas nao podem inclui construtores ou destrutores default, mas podem ter construtores parametrizados
+                -nao podem herdar outra estrutura ou classe
+
+            Arrays
+                -podem ter varias dimensoes
+                -podemos de chamar matrizes
+
+4 > continuacao da introducao a C#
+    TP
+    na pltatamforma as emrpeas ou empresarios inscrevemse para )...=, Ha um done/gestor da plataforma, e dpois cada empresa``
+    gere a sua pagina/empresa. Ha um ou dois adiminstradores da plataforma geral.
+
+    os arrays sao similares a c 
+        chamamos vetores, arrays, matrizes(+1D) ou cubos (+2D)
+        uma sequencia de frames podera ser um array de 3 dimensoes
+        o C# nao permite buffer overflows com a utilizacao normal dos arrays
+
+    C# tem tipos dinamicos (tipo 'var')
+        a inferencia de dados nao e a mesma coisa que 'dynamic'. O tipo dynamic, permite a alteracao do tipo depois da inicializacao
+        a inferencia olha para o conteudo dos dados e infere o seu tipo.
+
+    namespaces
+        organiza um conjunto de classes realcionadas entre si.
+        'using' para chamar as classes de um namespace
+
+    em C# nao ha funcoes, so metodos.
+
+    <sobretudo revisoes de POO>
+
+    e possivel partir classes em varios ficheiros (classes parciais)
+
+    as classes tambem tem niveis de protecao (internal. protected, abstract, public,...)
+
+
+5 > Continuacao da introcao a C#
+    sessao de esclarecimento de duvidas as 18h no dia 12/10/2023
+
+    entrega do TP a 17 de dezembro
+
+    as classes parciais servem para se poder partir as classes em varios ficheiros
+
+    no metodo 'set', a keyword 'value'serve para obter o valor da variavel passada ao set()
+
+    uma classe selada nao pode ser derivada. E o contrario das abstratas. Uma classe abstrata nao pode ser instanciada.
+
+    camelCase para variaveis privadas; PascalCase para variaveis publicas
+
+    o operador lambda '=>' serve para designar expressoes lambda.
+
+    passagem por referencia?
+
+    'out' - parametro de saida dos metodos.
+
+    C# suporta parameter arrays; permite a passagem de um numero vairavel de parametros do tipo identico(ou classes relacionadas
+    por heramca)
+ 
+ 6 
+    polimorfismo
+        Implementa-se um metodo generico que e concretizado pelas classes derivadas.
+    Heranca
+    Tratamento de Excecoes
+    Top Level Statements´
+
+7
+    strings no csharp
+    csharp tem interpolacao de strings
+        no csharp 6 foi introduzido um recurso chamadao interpolacao de strings. Nas versoes anteriores do csharp a 
+        concatenacao de strings era mais trabalhosa.
+            exemplo com o metodo format da classe string
+
+        o caracter @ e usado para a construcao d estrings mais facilemente sem recorrer tanto as sequencias de escape, 
+        usando antes verbatim strings
+        
+
+8
+    uma expressao switch nao e o mesmo que uma instrucao switch
+    o switch com o operador lambda e o mais recente
+
+9 
+    delegates
+    os delegates sao metodos atribuiveis a variaveis. Um delegate pode ser enviado para um metodo para alterar o seu comportamento.
+
+    os delegates permitem metodos anonomimos
+
+    delegates genericos
+        func -- funcao, returna um valor
+        action -- procidimento, nao retorna nada
+        predicate -- condicoes, ifs
+
+    a expressao lambda NAO E IGUAL ao operador lambda
+
+    uma expressao lambda e uma forma simplificada de implementar um delegate
+
+
+10
+    extension methods
+        permite adicionar metodos novos a uma classe sem recorrer a Heranca
+        so funciona com classes estaticas
+    
+    LINQ
+        permite efetuar pesquisas em c# ou VB a conjuntos de dados
+
+11
+    o select da query string nao e bem o mesmo que o select do SQL
+        
+12
+    (...)
+
+13
+    vistas
+        as vistas parciais e colocada na pasta onde e utilizada. Caso seja usada por varias paginas, a vista deve ser posta na pasta "shared"
+    
+        tag helpers - facilita a criacao de views
+    
+    entity framework

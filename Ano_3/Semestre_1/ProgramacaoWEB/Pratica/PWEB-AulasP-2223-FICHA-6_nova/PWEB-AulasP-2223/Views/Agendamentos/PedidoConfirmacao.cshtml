@@ -1,0 +1,52 @@
+﻿@model PWEB_AulasP_2223.Models.Agendamento
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+
+<h4>Agendamento - Confirmação</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" method="post">
+            <input type="hidden" asp-for="DuracaoHoras" />
+            <input type="hidden" asp-for="DuracaoMinutos" />
+            <input type="hidden" asp-for="Preco" />
+            <input type="hidden" asp-for="TipoDeAulaId" />    
+            <input type="hidden" asp-for="ApplicationUserId" />
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label class="control-label">Tipo de Aula</label>
+                <input type="text" class="form-control form-control-lg" readonly disabled value="@Model.tipoDeAula.Nome" />
+            </div>           
+            <div class="form-group">
+                <label asp-for="DataInicio" class="control-label"></label>
+                <input asp-for="DataInicio" class="form-control" readonly  />
+                <span asp-validation-for="DataInicio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataFim" class="control-label"></label>
+                <input asp-for="DataFim" class="form-control" readonly disabled />
+                <span asp-validation-for="DataFim" class="text-danger"></span>
+            </div>                        
+           
+            <div class="form-group pt-4">
+                <p class="alert alert-info">Este pedido de agendamento tem um custo de  <b>@Model.Preco</b> Euros.
+                    
+                    </p>
+            </div>
+            <div class="form-group">
+                <p>Por favor escolha uma das seguintes opções:</p>
+                <input type="submit" value="Confirmar Agendamento" class="btn btn-primary" />
+                <a class="btn btn-warning" asp-controller="Agendamentos" asp-action="Pedido">Cancelar pedido</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

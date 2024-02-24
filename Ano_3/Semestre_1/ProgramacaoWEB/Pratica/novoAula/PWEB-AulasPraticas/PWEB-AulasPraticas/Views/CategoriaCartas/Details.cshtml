@@ -1,0 +1,36 @@
+﻿@model PWEB_AulasPraticas1.Models.CategoriaCarta
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h1 class="text-center mb-4">Detalhes</h1>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">CategoriaCarta</h4>
+                    <hr />
+                    <dl class="row">
+                        <dt class="col-sm-3">Nome</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.Nome)</dd>
+
+                        <dt class="col-sm-3">Descrição</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.Descricao)</dd>
+
+                        <dt class="col-sm-3">Disponível</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.Disponivel)</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="mt-4 text-center">
+                <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-primary">Editar</a>
+                <a asp-action="Index" class="btn btn-secondary">Voltar para a Lista</a>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,21 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@using (Html.BeginForm("Search", "Cursos", FormMethod.Get))
+{
+    <div class="form-inline d-flex ">
+
+        <input type="text" name="textoAPesquisar" 
+            id="textoAPesquisar" placeholder="texto a procurar" 
+            class="form-control form-control-sm" />
+
+        <button type="submit" 
+            class="btn btn-default ms-2 me-2">
+            <svg bootstrap-icon="Search" 
+            class="text-warning" width="24" height="24" 
+            aria-label="Search"></svg>
+        </button>
+    </div>
+}

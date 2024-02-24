@@ -1,0 +1,51 @@
+﻿@model List<PWEB_AulasP_2223.ViewModels.ManageUserRolesViewModel>
+@{
+    ViewData["Title"] = "Manage";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+<form method="post">
+    <div class="card">
+        <div class="card-header">
+            <h2>Manage User Roles</h2>
+            <span class="badge bg-dark text-white">@ViewBag.UserName</span> Add/Remove Roles
+        </div>
+        <div class="card-body">
+            <h5>Usando o ciclo for para construir o [] de roles</h5>
+            @for (int i = 0; i < Model.Count; i++)
+            {
+                <div class="form-check m-1">
+                    <input type="hidden" asp-for="@Model[i].RoleId" />
+                    <input type="hidden" asp-for="@Model[i].RoleName" />
+                    <input asp-for="@Model[i].Selected" class="form-check-input" />
+                    <label class="form-check-label" asp-for="@Model[i].Selected">
+                        @Model[i].RoleName
+                    </label>
+                </div>
+            }
+            <hr />
+            <h5>Usando o foreach Model - dificuldades em enviar o modelo</h5>
+            <h6>Ver o HTML gerado por no for e no foreach (input id)</h6>
+            <h6>[X].Selected vs item.Selected</h6>
+            
+
+            @foreach(var item in Model )
+            {
+                <div class="form-check m-1">
+                    <input type="hidden" asp-for="@item.RoleId" />
+                    <input type="hidden" asp-for="@item.RoleName" />
+                    <input asp-for="@item.Selected" class="form-check-input" />
+                    <label class="form-check-label" asp-for="@item.Selected">
+                        @item.RoleName
+                    </label>
+                </div>
+            }
+            <div asp-validation-summary="All" class="text-danger"></div>
+        </div>
+        <div class="card-footer">
+            <input type="submit" value="Update" class="btn btn-primary"
+                   style="width:auto" />
+            <a asp-action="Index" 
+               class="btn btn-primary" style="width:auto">Cancel</a>
+        </div>
+    </div>
+</form>

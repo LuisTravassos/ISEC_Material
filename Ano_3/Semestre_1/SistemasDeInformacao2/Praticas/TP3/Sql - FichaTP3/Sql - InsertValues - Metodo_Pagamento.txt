@@ -1,0 +1,4 @@
+insert into metodo_pagamento (id_metodo_pagamento, designacao_metodo_pagamento) values (1, 'mbway');
+insert into metodo_pagamento (id_metodo_pagamento, designacao_metodo_pagamento) values (3, 'cheque');
+insert into metodo_pagamento (id_metodo_pagamento, designacao_metodo_pagamento) values (4, 'mb');
+insert into metodo_pagamento (id_metodo_pagamento, designacao_metodo_pagamento) values (5, 'dinheiro');

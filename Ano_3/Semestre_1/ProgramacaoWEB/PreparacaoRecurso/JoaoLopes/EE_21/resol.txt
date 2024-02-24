@@ -1,0 +1,34 @@
+epoca especial 2021
+joao lopes
+
+1.
+Os delegates sao tipos de dados que representam referências a métodos. A principal utilização dos delegates é de passar referências de métodos a outros métodos (por parametro), de modo a alterar o seu comportamento. São uma ferramenta que permitem tornar o código mais legível e mais facil de manter.
+
+
+2.
+O ASP net core usa a tecnologia razor para gerar páginas de html com conteúdo dinâmico e determinado em runtime, sendo isso feito nas vistas. Para além de ser possível usar codigo csharp com a blocos delimitados por @{...}, é ainda possível usar html helpers ou tag helpers para abreviar código html e associar elementos do DOM com às propriedades dos modelos de dados. 
+
+3.
+É possível fazer a validação tanto do lado do cliente como do lado do servidor. Do lado do cliente é possivel usar javascript para mais facilmente e rapidamente notificar o utilizador de quando este estiver a introduzir dados não válidos (porque é tudo feito do lado do cliente, e não são feitos pedidos ao cliente). A validação também pode, e deve, ser feita do lado do servidor. Ela é feita automáticamente com a associação dos tag helpers às propriedades do modelo de dados. É possível, e recomendável, definir validações das classes dos modelos de dados, seja com data anotations ou métodos com logica mais sofisticada.
+
+4. O design pattern do model-view-controler é ainda usado muito frequentemente nos projetos de desenvolvimento web. A figura central, pode se dizer, que é o controlador, pois controla o fluxo de dados entre as vistas e a base de dados (representada pelo modelo de dados). Os controladores definem a logica responsável pela obtenção e registo de dados, e ao passarem os dados às vistas eles são integrados numa página html dinâmica (que usa razor) para serem apresentados aos utilizadores. As vistas recebem os dados dos controladores mas também os recebem de formularios dos utilizadores. As validações dos formulários são obtidas da interação da vista com o modelo de dados. Entre estes não existe fluxo de dados, mas a vista vai buscar informação sobre as validações e os tipos de dados às propriedades definidas nas classes dos modelos.
+
+5.
+a.
+LINQ - language integrated query - é uma linguagem para efetuar pesquisas sobre bases de dados. A grande vatnagem do LINQ é de permitir, com o mesmo conjunto de instruções efetuar pesquisas sobre um leque alargado de tecnologias de sistemas de gestão de base de dados. O mesmo projeto escrito com queries LINQ pode servir para ligações com postgres, sql server, oracle, etc. Pode-se dizer que o LINQ integra uma série de tecnologias com uma linguagem única, flexivel e acessível a programadores web.
+
+b.
+A utilização de extension methods ou de query syntax está sujeita à preferencia do programador. A query syntax é mais parecida com as queries em SQL, enquanto que os extension methods oferecem uma abordagem diferente -- mais moderna, legível e flexível. Esta abordagem involve a utilização de métodos de extensão sobre um objeto IEnumerable<T> que acrescentam condições de seleção (filtros) ao seu conteúdo.
+
+6.
+a.
+O operador => chama-se operador lambda porque está associado às expressões lambda. Este operador é usado neste timpo de expressões para implementar métodos anónimos de forma concisa e legível. As expressões lambda seguem a seguinte sintaxe (parametros) => {comportamento em funcao dos parametros}. As expressões lambda sao usadas frequentemente com os extensions methods em LINQ.
+
+b.
+O papel do operador lambda na instrução apresentada é de implimentar um predicate delegate que é usado na clausula "where" para filtrar os elementos da lsita alunosF. Esta expressão está a separar o nome de uma aluno em palavras por um delimitador e está a passar um filtro ao ultimo nome (passando apenaso os nomes que comecam por J). Em suma, a expressão seleciona todos os alunos cujo ultimo nome começa por J.
+
+7.
+Existem essencialmente dois workflows muito utilizados atualmente: code first e database first. Na abordagem code first, o esquema de base de dados é inferido pelo entity framework a partir das classes implementadas pelo programador. Depois de implementadas, as classes devem ser introduzidas no contexto da BD para que, quando for feita o update da base de dados na consola o SQL correspondenete e a respetiva base de dados sejam geradas. O EF permite ir adicionando ou removendo tabelas e atributos em função das necessidados, através de alterações ao código das classes dos modelos de dados e de migrações. Code first é a abordagem recomendada para projetos criados de raíz ou onde não há uma herança de dados de outro projeto. O workflow database first faz mais sentido quando já existe uma base de dados e esta tem de ser representada no projeto. Neste caso, usa-se o EF para fazer engenharia reversa da base de dados antiga para que o esquema e dados desta passem a ter, no projeto, classes do modelo de dados.
+
+8.
+A arquitetura mostrada pelo diagrama descreve o papel do LINQ como intermediário entre a base de dados e a apliacação de um projeto de desenvolvimento web. O LINQ é responsável por interagir com o sistema de gestão de base de dados (de uma de várias tecnologias) para converter uma pesquisa feita na sintaxe LINQ num comando SQL (ou sintaxe correspondente à tecnologia de SGBD usada) para obter uma tabela com os registos. Essa tabela é então convertida num objeto do tipo IEnumerable<T> que pode ser sujeito a iteração dentro aplicação.
