@@ -1,0 +1,9 @@
+Alice Melo;Coimbra;F;24
+Filipe Silva;Porto;M;30
+Joana Sousa;Lisboa;F;45
+Mariana Guerra;Coimbra;F;30
+Ricardo Costa;Porto;M;19
+Jorge Costa;Coimbra;M;46
+Luisa Sobral;Porto;F;29
+Rui Mota;Lisboa;M;50
+Carlos Fernandes;Coimbra;M;32

@@ -1,0 +1,7 @@
+<!ELEMENT preco  ( #PCDATA )>
+......
+
+<!ATTLIST produto cod CDATA #REQUIRED>
+.....
+
+

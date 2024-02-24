@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<catalogo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="livros.xsd">
+     <livro isbn="9789897846984" paginas="384">
+          <titulo>Rui Pinto: o Hacker que Abalou o Mundo do Futebol</titulo>
+          <autor>Nuno Tiago Pinto</autor>
+          <capa>https://img.bertrand.pt/images/rui-pinto-o-hacker-que-abalou-o-mundo-do-futebol-nuno-tiago-pinto/NDV8MjgzODE5Njl8MjQ3NDUzNzZ8MTY3OTQ4NTAzODAwMA==/500x</capa>
+          <editora>Objectiva</editora>
+          <preco store="bertrand">16.97</preco>
+          <preco store="wook">18.85</preco>
+     </livro>
+     <livro isbn="9789892348568" paginas="160">
+          <titulo>Cães Maus Não Dançam</titulo>
+          <autor>Arturo Pérez-Reverte</autor>
+          <capa>https://img.bertrand.pt/images/caes-maus-nao-dancam-arturo-perez-reverte/NDV8MjQ1OTAwMzd8MjA3MDk2NzF8MTYxMTkxODMyNTAwMA==/500x</capa>
+          <editora>Edições Asa</editora>
+          <preco store="bertrand">14.31</preco>
+          <preco store="wook">15.9</preco>
+     </livro>
+     <livro isbn="9789899039353" paginas="184">
+          <titulo>Arsène Lupin - Cavalheiro Ladrão</titulo>
+          <autor>Maurice Leblanc</autor>
+          <capa>https://img.bertrand.pt/images/arsene-lupin-cavalheiro-ladrao-maurice-leblanc/NDV8MjQ2NjkzNzR8MjA4MTAzNzN8MTYxNDg4MzAxOTAwMA==/500x</capa>
+          <editora>Cultura Editora</editora>
+          <preco store="bertrand">13.95</preco>
+          <preco store="wook">15.5</preco>
+     </livro>
+     <livro isbn="9789898857071" paginas="32">
+          <titulo>De Que Cor É um Beijinho?</titulo>
+          <autor>Rocio Bonilla</autor>
+          <capa>https://img.bertrand.pt/images/de-que-cor-e-um-beijinho-rocio-bonilla/NDV8MTkwODE0MDJ8MTQ4NTE5ODZ8MTUxNjE5ODY3NzAwMA==/500x</capa>
+          <editora>Jacarandá Editora</editora>
+          <preco store="bertrand">12.9</preco>
+          <preco store="wook">12.9</preco>
+     </livro>
+     <livro isbn="9789722055932" paginas="96">
+          <titulo>O Principezinho</titulo>
+          <autor>Antoine de Saint-Exupéry</autor>
+          <capa>https://img.bertrand.pt/images/o-principezinho-antoine-de-saint-exupery/NDV8MTYxNTMwMjN8MTE2OTg0MzB8MTQyMTA4MDEwMjAwMA==/500x</capa>
+          <editora>Dom Quixote</editora>
+          <preco store="bertrand">5.5</preco>
+          <preco store="wook">5.5</preco>
+     </livro>
+     <livro isbn="9780837178561" paginas="427">
+          <titulo>Music Under The Soviets</titulo>
+          <autor>Andrey Vasilyevich Olkhovsky</autor>
+          <capa>https://img.bertrand.pt/images/music-under-the-soviets-andrey-vasilyevich-olkhovsky/NDV8MTQ5NTk5NzF8MTA0NDQ2NjN8MTM4MzU5MDM3MTAwMA==/500x</capa>
+          <editora>ABC-CLIO</editora>
+          <preco store="bertrand">99.0</preco>
+          <preco store="wook">33.33</preco>
+     </livro>
+     <livro isbn="9789897224607" paginas="264">
+          <titulo>Almoço de Domingo</titulo>
+          <autor>José Luís Peixoto</autor>
+          <capa>https://img.bertrand.pt/images/almoco-de-domingo-jose-luis-peixoto/NDV8MjEzMzIxOTh8MTcyMTgzNDJ8MTYxNDg4MzAwNzAwMA==/500x</capa>
+          <editora>Quetzal Editores</editora>
+          <preco store="bertrand">22.0</preco>
+          <preco store="wook">17.7</preco>
+     </livro>
+     <livro isbn="9789722129220" paginas="114">
+          <titulo>Leandro, Rei da Helíria</titulo>
+          <autor>Alice Vieira</autor>
+          <capa>https://img.bertrand.pt/images/leandro-rei-da-heliria-alice-vieira/NDV8MjE3MTYwMjd8MTc1Njg5NDV8MTUyMjc1Mjc0NjAwMA==/500x</capa>
+          <editora>Editorial Caminho</editora>
+          <preco store="bertrand">14.0</preco>
+          <preco store="wook">22.0</preco>
+     </livro>
+     <livro isbn="9789722363037" paginas="416">
+          <titulo>Viúvas</titulo>
+          <autor>Lynda La Plante</autor>
+          <capa>https://img.bertrand.pt/images/viuvas-lynda-la-plante/NDV8MjIzODE3OTh8MTgyNTk2NTd8MTU0MDQ2MzA3MTAwMA==/500x</capa>
+          <editora>Editorial Presença</editora>
+          <preco store="bertrand">18.9</preco>
+          <preco store="wook">34.0</preco>
+     </livro>
+     <livro isbn="9789897849596" paginas="168">
+          <titulo>Leme</titulo>
+          <autor>Madalena Sá Fernandes</autor>
+          <capa>https://img.bertrand.pt/images/leme-madalena-sa-fernandes/NDV8Mjg1MDYxNTB8MjQ4Nzk4OTZ8MTY4MTg5Mzc2NDAwMA==/500x</capa>
+          <editora>Companhia das Letras</editora>
+          <preco store="bertrand">13.91</preco>
+          <preco store="wook">99.99</preco>
+     </livro>
+     <livro isbn="9789722728928" paginas="58">
+          <titulo>Padre António Vieira - A Palavra e o Mundo</titulo>
+          <autor>Alice Vieira</autor>
+          <capa>https://img.bertrand.pt/images/padre-antonio-vieira-a-palavra-e-o-mundo-alice-vieira/NDV8MjgwMzkwNjV8MjQ0NDIxNTB8MTY3Mjg0OTIwMTAwMA==/500x</capa>
+          <editora>INCM – Imprensa Nacional Casa da Moeda</editora>
+          <preco store="bertrand">9.9</preco>
+          <preco store="wook">99.99</preco>
+     </livro>
+     <livro isbn="9789722129053" paginas="120">
+          <titulo>Rosa, Minha Irmã Rosa</titulo>
+          <autor>Alice Vieira</autor>
+          <capa>https://img.bertrand.pt/images/rosa-minha-irma-rosa-alice-vieira/NDV8MjE0MDMxNzR8MTcyNzY5NDl8MTUxNzU5MzE4MDAwMA==/500x</capa>
+          <editora>Editorial Caminho</editora>
+          <preco store="bertrand">11.0</preco>
+          <preco store="wook">99.99</preco>
+     </livro>
+     <livro isbn="9789897221798" paginas="280">
+          <titulo>Galveias</titulo>
+          <autor>José Luís Peixoto</autor>
+          <capa>https://img.bertrand.pt/images/galveias-jose-luis-peixoto/NDV8MTU4MjYyNDJ8MTEzMjIxNTZ8MTQ0NzI2MjgwNTAwMA==/500x</capa>
+          <editora>Quetzal Editores</editora>
+          <preco store="bertrand">17.7</preco>
+          <preco store="wook">99.99</preco>
+     </livro>
+     <livro isbn="9789895701223" paginas="336">
+          <titulo>A Rapariga na Água</titulo>
+          <autor>Leslie Wolfe</autor>
+          <capa>https://img.bertrand.pt/images/a-rapariga-na-agua-leslie-wolfe/NDV8Mjg0OTgwNDl8MjQ4NzA0NTd8MTY4MTQ4MjM4NjAwMA==/500x</capa>
+          <editora>Alma dos Livros</editora>
+          <preco store="bertrand">17.51</preco>
+          <preco store="wook">99.99</preco>
+     </livro>
+     <livro isbn="9789722129695" paginas="192">
+          <titulo>Chocolate à Chuva</titulo>
+          <autor>Alice Vieira</autor>
+          <capa>https://img.bertrand.pt/images/chocolate-a-chuva-alice-vieira/NDV8MjI4ODQ5MTd8MTg3NzEwODF8MTU1MTE3ODQ1MzAwMA==/500x</capa>
+          <editora>Editorial Caminho</editora>
+          <preco store="bertrand">11.0</preco>
+          <preco store="wook">99.99</preco>
+     </livro>
+</catalogo>

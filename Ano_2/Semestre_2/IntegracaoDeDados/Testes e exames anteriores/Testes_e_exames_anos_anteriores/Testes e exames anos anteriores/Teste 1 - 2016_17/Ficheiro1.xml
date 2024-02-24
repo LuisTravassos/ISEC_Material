@@ -1,0 +1,78 @@
+<loja data="2013-04-21">
+	<desc classe="descr">Listagem de produtos da Loja FrescosCia gerida por<nome>Lurdes  Costa</nome> com o contacto <contacto tipo="tlm">939399933</contacto></desc>
+	<mercearia actualizado="2017-03-01">
+		<produto tipo="cereais">
+			<nome>Cereais</nome>
+			<stock quant="10"/>
+			<preco desconto="não">2.50</preco>
+		</produto>
+		<produto tipo="cereais">
+			<nome>Cereais Muesli</nome>
+			<stock quant="20"/>
+			<preco desconto="não">1.50</preco>
+		</produto>
+		<produto tipo="bolachas">
+			<nome>Bolachas Cookies</nome>
+			<stock quant="100"/>
+			<preco desconto="sim">1.50</preco>
+		</produto>	
+	</mercearia>
+	<frescos>
+		<produto tipo="laticinios">
+			<nome>Leite meio gordo</nome>
+			<stock quant="15"/>
+			<preco>0.30</preco>
+			<validade>2017-06-15</validade>
+		</produto>
+		<produto tipo="laticinios">
+			<nome>Iogurtes</nome>
+			<stock quant="10"/>
+			<preco desconto="não">2.50</preco>
+			<validade>2017-05-01</validade>
+		</produto>
+		<produto tipo="laticinios">
+			<nome>Leite de soja</nome>
+			<stock quant="5"/>
+			<preco>0.50</preco>
+			<validade>2017-07-05</validade>
+		</produto>
+		<produto tipo="legumes">
+			<nome>Alface</nome>
+			<stock quant="60"/>
+			<preco desconto="não">0.50</preco>
+			<validade>2017-04-10</validade>
+		</produto>
+		<produto tipo="legumes">
+			<nome>Cenouras</nome>
+			<stock quant="60"/>
+			<preco desconto="não">0.50</preco>
+			<validade>2017-04-10</validade>
+		</produto>
+	</frescos>
+	<papelaria local="Porto">
+		<produto tipo="pap">
+			<nome>Caderno liso</nome>
+			<stock quant="10"/>
+			<preco desconto="sim">6.5</preco>
+			<marca>Ambar</marca>
+		</produto>
+		<produto tipo="pap">
+			<nome>Fita-cola</nome>
+			<stock quant="55"/>
+			<preco desconto="não">1.5</preco>
+			<marca>TesaFilm</marca>
+		</produto>
+		<produto tipo="pap">
+			<nome>Caderno A3 pautado</nome>
+			<stock quant="5"/>
+			<preco desconto="não">0.5</preco>
+			<marca>Note</marca>
+		</produto>
+		<produto tipo="pap">
+			<nome>Afiadeira</nome>
+			<stock quant="15"/>
+			<preco desconto="sim">0.5</preco>
+			<marca>Ferris</marca>
+		</produto>
+	</papelaria>
+</loja>

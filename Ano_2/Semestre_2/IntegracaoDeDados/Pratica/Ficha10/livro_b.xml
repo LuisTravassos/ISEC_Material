@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stocks>
+     <livro isbn="9789897846984" stock="45"/>
+     <livro isbn="9789892348568" stock="32"/>
+     <livro isbn="9789898857071" stock="134"/>
+     <livro isbn="9780837178561" stock="100" />
+     <livro isbn="9789897849596" stock="24"/>
+     <livro isbn="9789895701223" stock="2"/> 
+     <livro isbn="9789722129695" stock="230"/>
+     <livro isbn="9789722129220" stock="3"/>
+     
+</stocks>

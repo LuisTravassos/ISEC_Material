@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- New document created with EditiX at Wed Jun 25 14:36:05 WEST 2014 -->
+
+<concurso>
+	<concorrentes>
+		<concorrente id="c01">
+			<nome>Filipe Melo</nome>
+			<idade>18</idade>
+			<cidade>Coimbra</cidade>
+			<categorias>
+				<cat tipo="teatro" resultado="reprovado" nota="10"/>
+				<cat tipo="dança" resultado="reprovado" nota="5"/>
+			</categorias>
+		</concorrente>
+		<concorrente id="c02">
+			<nome>Carla Fontes</nome>
+			<idade>28</idade>
+			<cidade>Coimbra</cidade>
+			<categorias>
+				<cat tipo="musica" resultado="aprovado" nota="7"/>
+				<cat tipo="dança" resultado="aprovado" nota="8"/>
+			</categorias>
+		</concorrente>
+		<concorrente id="c03">
+			<nome>Joana Martins</nome>
+			<idade>53</idade>
+			<cidade>Lisboa</cidade>
+			<categorias>
+				<cat tipo="teatro" resultado="aprovado" nota="7"/>
+				<cat tipo="dança" resultado="aprovado" nota="9"/>
+				<cat tipo="musica" resultado="reprovado"  nota="3"/>
+			</categorias>
+		</concorrente>
+		<concorrente id="c04">
+			<nome>Ana Martins</nome>
+			<idade>55</idade>
+			<cidade>Coimbra</cidade>
+			<categorias>
+				<cat tipo="teatro" resultado="aprovado" nota="8"/>
+				<cat tipo="dança" resultado="reprovado" nota="3"/>
+				<cat tipo="musica" resultado="reprovado" nota="5"/>
+			</categorias>
+		</concorrente>
+	</concorrentes>
+	<juri>
+		<jurado>
+			<nome>Sara Silva</nome>
+			<local>Lisboa</local>
+		</jurado>
+		<jurado>
+			<nome>André Poeiras</nome>
+			<local>Coimbra</local>
+		</jurado>
+		<jurado>
+			<nome>Luis Guerra</nome>
+			<local>Porto</local>
+		</jurado>
+		
+	</juri>
+
+</concurso>
+

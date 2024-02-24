@@ -1,0 +1,5 @@
+Relativamente às cadeiras de base de dados, introdução à inteligência artificial,
+investigação operacional, introdução a redes de comunicação, programação orientada a objetos
+e sistemas operacionais não penso ter nenhum material util para colocar aqui.
+As cadeiras de IIA, POO e SO tem repos associados com os trabalhos práticos respetivos.
+Se eventualmente encontrar algo atualizo o conteudo deste repo.

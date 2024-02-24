@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<catalogo>
+     <livro isbn="9789722533492" paginas="152">
+          <titulo>André e a Esfera Mágica</titulo>
+          <autor>Manuela Gonzaga</autor>
+          <capa>https://img.bertrand.pt/images/andre-e-a-esfera-magica-manuela-gonzaga/NDV8MTg5NzgwNTd8MTQ3MzgzMDh8MTQ4NTQ1MjI3NTAwMA==/500x</capa>
+          <editora>Bertrand Editora</editora>
+          <preco store="bertrand">12.2</preco>
+          <preco store="wook">25.0</preco>
+     </livro>
+     <livro isbn="9789897224607" paginas="264">
+          <titulo>Almoço de Domingo</titulo>
+          <autor>José Luís Peixoto</autor>
+          <capa>https://img.bertrand.pt/images/almoco-de-domingo-jose-luis-peixoto/NDV8MjEzMzIxOTh8MTcyMTgzNDJ8MTYxNDg4MzAwNzAwMA==/500x</capa>
+          <editora>Quetzal Editores</editora>
+          <preco store="bertrand">17.7</preco>
+          <preco store="wook">17.7</preco>
+     </livro>
+     <livro isbn="9789722129220" paginas="114">
+          <titulo>Leandro, Rei da Helíria</titulo>
+          <autor>Alice Vieira</autor>
+          <capa>https://img.bertrand.pt/images/leandro-rei-da-heliria-alice-vieira/NDV8MjE3MTYwMjd8MTc1Njg5NDV8MTUyMjc1Mjc0NjAwMA==/500x</capa>
+          <editora>Editorial Caminho</editora>
+          <preco store="bertrand">9.9</preco>
+          <preco store="wook">9.9</preco>
+     </livro>
+     <livro isbn="9789722532877" paginas="168">
+          <titulo>Manual do Guerreiro da Luz</titulo>
+          <autor>Paulo Coelho</autor>
+          <capa>https://img.bertrand.pt/images/manual-do-guerreiro-da-luz-paulo-coelho/NDV8MTgyMjM5OTh8MTM5MDg0MTB8MTQ3NDU2MzYwNzAwMA==/500x</capa>
+          <editora>11 X 17</editora>
+          <preco store="bertrand">8.0</preco>
+          <preco store="wook">8.0</preco>
+     </livro>
+     <livro isbn="9789892314044" paginas="368">
+          <titulo>Palácio da Lua</titulo>
+          <autor>Paul Auster</autor>
+          <capa>https://img.bertrand.pt/images/palacio-da-lua-paul-auster/NDV8MTA5MTgwODl8NjQ4Nzg0MHwxMzgzNTgxMTE2MDAw/500x</capa>
+          <editora>Edições Asa</editora>
+          <preco store="bertrand">12.9</preco>
+          <preco store="wook">12.9</preco>
+     </livro>
+</catalogo>

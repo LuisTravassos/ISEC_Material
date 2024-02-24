@@ -1,0 +1,4 @@
+Alice Melo;Coimbra;F;24
+Joana Sousa;Lisboa;F;45
+Mariana Guerra;Coimbra;F;30
+Luisa Sobral;Porto;F;29

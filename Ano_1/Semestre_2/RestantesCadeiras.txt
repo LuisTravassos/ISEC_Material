@@ -1,0 +1,5 @@
+Relativamente às cadeiras de análise matemática 2, Fundamentos de
+computação gráfica, linguagens script, programação e tecnologia e arquitetura 
+de computadores não penso ter nenhum material util para colocar aqui.
+Existe um repo para TAC com o meu trabalho prático.
+Se eventualmente encontrar algo atualizo o conteudo deste repo.

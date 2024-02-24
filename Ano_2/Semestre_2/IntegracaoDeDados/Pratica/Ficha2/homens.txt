@@ -1,0 +1,5 @@
+Filipe Silva;Porto;M;30
+Ricardo Costa;Porto;M;19
+Jorge Costa;Coimbra;M;46
+Rui Mota;Lisboa;M;50
+Carlos Fernandes;Coimbra;M;32

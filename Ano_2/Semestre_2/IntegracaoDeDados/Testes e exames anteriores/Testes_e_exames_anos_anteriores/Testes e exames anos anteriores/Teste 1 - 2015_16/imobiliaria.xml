@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<imobiliaria >
+	<imoveis>
+		<imovel tipo="Apt" tipologia="T2">
+			<localizacao>Ilhavo, Aveiro</localizacao>
+			<area uni="m2">100</area>
+			<preço>75000</preço>
+			<extras>
+				<extra>Ar condicionado</extra>
+				<extra>Aquecimento central</extra>
+				<extra>Garagem</extra>
+			</extras>
+		</imovel>
+		<imovel tipo="Apt" tipologia="T3">
+			<localizacao>Aveiro</localizacao>
+			<area uni="m2">140</area>
+			<preço>12000</preço>
+			<extras>
+				<extra>Garagem</extra>
+			</extras>
+		</imovel>
+		<imovel tipo="Moradia" tipologia="T5">
+			<localizacao>Coimbra</localizacao>
+			<area uni="m2">300</area>
+			<preço>475000</preço>
+			<extras>
+				<extra>Ar condicionado</extra>
+				<extra>Aquecimento central</extra>
+				<extra>Piscina</extra>
+				<extra>Garagem</extra>
+			</extras>
+		</imovel>
+		<imovel tipo="Moradia" tipologia="T2">
+			<localizacao>Vagos, Aveiro</localizacao>
+			<area uni="m2">120</area>
+			<preço>150000</preço>
+			<extras>
+				<extra>Piscina</extra>
+				<extra>Garagem</extra>
+			</extras>
+		</imovel>
+	</imoveis>
+	<terrenos>
+		<terreno>
+			<localizacao>Soure, Coimbra</localizacao>
+			<area uni="m2">300</area>
+			<preço>10000</preço>
+		</terreno>
+		<terreno>
+			<localizacao>Aveiro</localizacao>
+			<area uni="m2">100</area>
+			<preço>15000</preço>
+		</terreno>
+		<terreno>
+			<localizacao>Eiras, Coimbra</localizacao>
+			<area uni="m2">100</area>
+			<preço>6000</preço>
+		</terreno>
+		<terreno>
+			<localizacao>Lisboa</localizacao>
+			<area uni="m2">600</area>
+			<preço>150000</preço>
+		</terreno>
+		<terreno>
+			<localizacao>Coimbra</localizacao>
+			<area uni="m2">300</area>
+			<preço>200000</preço>
+		</terreno>
+	</terrenos>
+	<vendedores>
+		<pessoa classe="vip">
+			<nome>Ana Martins</nome>
+			<contacto tipo="tlm">966644567</contacto>
+			<localidade>Coimbra</localidade>
+			<idade>22</idade>
+		</pessoa>
+		<pessoa classe="nivel 1">
+			<nome >Joana Martins</nome>
+			<contacto tipo="tlm">911199911</contacto>
+			<contacto tipo="fixo">244555000</contacto>
+			<localidade>Leiria</localidade>
+			<idade>44</idade>
+		</pessoa>
+		<pessoa classe="nivel 2">
+			<nome >Jorge Melo</nome>
+			<contacto tipo="tlm">965559993</contacto>
+			<contacto tipo="tlm">928883339</contacto>
+			<localidade>Lisboa</localidade>
+			<idade>32</idade>
+		</pessoa>
+		<pessoa classe="nivel 2">
+			<nome >Isabel Martins</nome>
+			<contacto tipo="tlm">965559993</contacto>
+			<localidade>Porto</localidade>
+			<idade>27</idade>
+		</pessoa>
+	</vendedores>
+</imobiliaria>
+
+

@@ -1,0 +1,4 @@
+Relativamente às cadeiras de algebra linear, análise matemática 1, 
+introdução à programação, sistemas digitais e tecnologias WEB não penso 
+ter nenhum material util para colocar aqui. 
+Se eventualmente encontrar algo atualizo o conteudo deste repo.
